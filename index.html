@@ -194,6 +194,19 @@
             white-space: pre;
             color: #2d3748;
         }
+        .rg-affiliation-logos {
+        width: 100%;
+        max-width: 1100px;
+        margin: 1.2rem auto 1.2rem;
+        text-align: center;
+    }
+
+        .rg-affiliation-logos img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
         @media (max-width: 640px) {
             #rg-publication .rg-authors { font-size: 0.94rem; }
             #rg-publication .rg-affiliations { font-size: 0.82rem; }
@@ -257,7 +270,14 @@
                         <sup>‡</sup>Corresponding authors.
                     </div>
                 </div>
+                <div class="rg-affiliation-logos">
+                <img src="./static/images/affiliation_logos.png"
+                     alt="Institution logos">
+                </div>
 
+
+
+                
                 <div class="rg-resources">
                     <a class="rg-resource"
                        href="https://arxiv.org/abs/2602.16444"
