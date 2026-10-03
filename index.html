@@ -91,13 +91,14 @@
         .fade-in.visible { opacity: 1; transform: translateY(0); }
 
 
-        /* Hero metadata, resource buttons, and citation */
+        /* ===== Added for CoRL metadata / resources / citation ===== */
         .acceptance-note {
-            margin: 1.15rem auto 0.9rem;
+            margin: 1.15rem auto 0.8rem;
             font-size: 1.15rem;
             font-weight: 700;
             color: var(--text-primary);
         }
+
         .authors {
             max-width: 1120px;
             margin: 0.5rem auto 0.45rem;
@@ -105,28 +106,30 @@
             line-height: 1.85;
             color: var(--text-secondary);
         }
-        .authors a { color: inherit; text-decoration: none; }
-        .authors a:hover { color: var(--accent-primary); }
+
         .affiliations {
             max-width: 1000px;
-            margin: 0.4rem auto 1.6rem;
+            margin: 0.4rem auto 1.5rem;
             font-size: 0.9rem;
             line-height: 1.65;
             color: var(--text-muted);
         }
+
         .author-notes {
             display: block;
-            margin-top: 0.2rem;
+            margin-top: 0.25rem;
             font-size: 0.86rem;
         }
+
         .resource-buttons {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 0.9rem;
-            margin: 1.3rem auto 0;
+            margin: 1.35rem auto 0;
         }
+
         .resource-btn {
             display: inline-flex;
             align-items: center;
@@ -141,14 +144,28 @@
             box-shadow: var(--shadow-md);
             transition: var(--transition);
         }
+
         .resource-btn:hover {
             transform: translateY(-2px);
             background: var(--accent-primary);
             box-shadow: var(--shadow-lg);
         }
-        .resource-btn svg { width: 19px; height: 19px; flex: 0 0 19px; }
-        .citation-wrap { max-width: 1100px; margin: 0 auto; }
-        .citation-intro { margin-bottom: 1rem; }
+
+        .resource-btn svg {
+            width: 19px;
+            height: 19px;
+            flex: 0 0 19px;
+        }
+
+        .citation-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .citation-intro {
+            margin-bottom: 1rem;
+        }
+
         .citation-box {
             position: relative;
             background: #f3f4f6;
@@ -156,6 +173,7 @@
             border-radius: 10px;
             overflow: hidden;
         }
+
         .citation-box pre {
             margin: 0;
             padding: 1.6rem 1.8rem;
@@ -167,6 +185,7 @@
             color: #2d3748;
             white-space: pre;
         }
+
         .copy-btn {
             position: absolute;
             top: 0.8rem;
@@ -181,7 +200,12 @@
             cursor: pointer;
             transition: var(--transition);
         }
-        .copy-btn:hover { color: var(--accent-primary); border-color: var(--accent-primary); }
+
+        .copy-btn:hover {
+            color: var(--accent-primary);
+            border-color: var(--accent-primary);
+        }
+
         @media (max-width: 640px) {
             .authors { font-size: 0.94rem; }
             .affiliations { font-size: 0.82rem; }
@@ -217,6 +241,7 @@
             <span class="hero-badge fade-in">Diversity-driven agentic framework integrated with self-reflection and memory</span>
             <h1 class="fade-in">RoboGene: Diversity-Driven Agentic Task Generation Framework for VLA Pre-training</h1>
             <div class="acceptance-note fade-in">Accepted by CoRL 2026</div>
+
             <div class="authors fade-in">
                 Yixue Zhang<sup>1,2,*</sup>,
                 Kun Wu<sup>1,*</sup>,
@@ -234,6 +259,7 @@
                 Chang Liu<sup>2,‡</sup>,
                 Jian Tang<sup>1,‡</sup>
             </div>
+
             <div class="affiliations fade-in">
                 <div><sup>1</sup>Beijing Innovation Center of Humanoid Robotics, Beijing, China</div>
                 <div><sup>2</sup>School of Advanced Manufacturing and Robotics, Peking University, Beijing, China</div>
@@ -242,18 +268,34 @@
                 <div><sup>5</sup>State Key Laboratory of Multimedia Information Processing, School of Computer Science, Peking University, Beijing, China</div>
                 <span class="author-notes"><sup>*</sup>Equal contribution. <sup>†</sup>Project lead. <sup>‡</sup>Corresponding authors.</span>
             </div>
+
             <p class="fade-in" style="margin-inline: auto;">An automated framework for generating diverse, physically plausible manipulation tasks to enhance Vision-Language-Action model pre-training</p>
+
             <div class="resource-buttons fade-in">
                 <a class="resource-btn" href="https://arxiv.org/abs/2602.16444" target="_blank" rel="noopener noreferrer" aria-label="Paper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 2.8h8l4 4V21H6z"/><path d="M14 2.8V7h4"/><path d="M9 12h6M9 16h6"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M6 2.8h8l4 4V21H6z"/>
+                        <path d="M14 2.8V7h4"/>
+                        <path d="M9 12h6M9 16h6"/>
+                    </svg>
                     <span>Paper</span>
                 </a>
+
                 <a class="resource-btn" href="https://huggingface.co/datasets/X-Humanoid/RoboGene" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face dataset">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"/><path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <ellipse cx="12" cy="5" rx="7" ry="3"/>
+                        <path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"/>
+                        <path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>
+                    </svg>
                     <span>Hugging Face</span>
                 </a>
+
                 <a class="resource-btn" href="https://modelscope.cn/datasets/X-Humanoid/RoboGene_tasks" target="_blank" rel="noopener noreferrer" aria-label="ModelScope dataset">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"/><path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <ellipse cx="12" cy="5" rx="7" ry="3"/>
+                        <path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"/>
+                        <path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>
+                    </svg>
                     <span>ModelScope</span>
                 </a>
             </div>
